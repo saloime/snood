@@ -1,3 +1,8 @@
+import { gameState, initGame } from './gameState.js';
+import { levels } from './levelData.js';
+import { bubbleColors, gridRows, gridCols } from './constants.js';
+import { gridToPixel, pixelToGrid } from './utils.js';
+
 // === GAME LOGIC ===
 function launchBubble() {
     if (currentBubble) return; // Only one at a time
@@ -138,3 +143,4 @@ function removeFloatingBubbles() {
         }
     }
 }
+
